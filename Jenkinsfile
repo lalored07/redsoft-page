@@ -11,11 +11,11 @@ pipeline {
                 sh 'npm install'      
             }
         }
-        stage('Deliver') {
+        stage('Test') {
                             steps {
-                                sh './jenkins/scripts/deliver.sh'
-                                input message: 'Finished using the web site? (Click "Proceed" to continue)'
-                                sh './jenkins/scripts/kill.sh'
+                                sh 'npm test'
+                                input message: 'Paso las pruebas? (Click "Proceed" to continue)'
+                                
                             }
                         }
         
