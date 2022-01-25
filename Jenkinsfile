@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'nodejs12x' }
+   tools {nodejs "nodejs12x"}
     stages {
         stage('Build') { 
             steps {
