@@ -11,13 +11,11 @@ pipeline {
                 sh 'npm install'      
             }
         }
-        stage('Test') {
-                            steps {
-                                sh 'npm test'
-                                input message: 'Paso las pruebas? (Click "Proceed" to continue)'
-                                
-                            }
-                        }
+        tage('RUN') { 
+            steps {
+                sh 'npm run'      
+            }
+        }                
         
     }
 }
