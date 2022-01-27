@@ -11,7 +11,7 @@ pipeline {
                 sh 'npm install'      
             }
         }
-        tage('RUN') { 
+        stage('Run') { 
             steps {
                 sh 'npm run'      
             }
