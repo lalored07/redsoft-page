@@ -1,19 +1,27 @@
 pipeline {
-   agent any
-   tools {nodejs "nodejs12x"}
-   environment{
+
+   agent { 
+       dockerfile true 
+    }
+
+   tools {
+       nodejs "nodejs12x"
+    }
+
+    environment{
        CI = 'true'
    }
+
     stages {
-        stage('Build') { 
+        /*stage('Build') { 
             steps {
                 sh 'npm -version' 
                 sh 'npm install'      
             }
-        }
-        stage('Run') { 
+        }*/
+        stage('Front-end') {
             steps {
-                sh 'npm run'      
+                sh 'node --version'
             }
         }                
         
