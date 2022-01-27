@@ -1,8 +1,8 @@
 pipeline {
 
-   agent { 
+  /* agent { 
        dockerfile true 
-    }
+    }*/
 
    tools {
        nodejs "nodejs12x"
@@ -13,15 +13,15 @@ pipeline {
    }
 
     stages {
-        /*stage('Build') { 
+       stage('Build') { 
             steps {
                 sh 'npm -version' 
                 sh 'npm install'      
             }
-        }*/
+        }
         stage('Front-end') {
             steps {
-                sh 'node --version'
+                sh 'npm start'
             }
         }                
         
