@@ -1,4 +1,4 @@
-FROM nodejs:latest
+FROM registry.redhat.io/rhscl/nodejs-4-rhel7
 
 ENV NODE_ENV=production
 
