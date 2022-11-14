@@ -1,4 +1,4 @@
-FROM ubi8/nodejs-14
+FROM rhel8/nodejs-14
 
 ENV NODE_ENV=production
 
