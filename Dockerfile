@@ -1,4 +1,4 @@
-FROM rhel8/nodejs-14
+FROM nodejs:latest
 
 ENV NODE_ENV=production
 
