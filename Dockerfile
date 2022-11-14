@@ -1,4 +1,4 @@
-FROM node:12
+FROM ubi8/nodejs-14
 
 ENV NODE_ENV=production
 
